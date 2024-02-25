@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append("D:/Intellij/NCKH/Python311/site-packages")
 import pygame
 import cv2
 import time
@@ -187,7 +189,6 @@ def run1():
                 key = cv2.waitKey(1)
                 if cv2.waitKey(1) == ord('q'):
                     break
-        
             else :
                  cv2.putText(img, "No face detected", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
